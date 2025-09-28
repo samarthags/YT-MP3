@@ -1,13 +1,21 @@
 {
   "name": "yt-to-mp3",
   "version": "1.0.0",
+  "description": "YouTube to MP3 converter for educational purposes",
   "main": "server.js",
+  "type": "commonjs",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
     "ytdl-core": "^4.11.1",
-    "fluent-ffmpeg": "^2.1.2"
-  }
+    "fluent-ffmpeg": "^2.1.2",
+    "@ffmpeg-installer/ffmpeg": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Samarth",
+  "license": "MIT"
 }
