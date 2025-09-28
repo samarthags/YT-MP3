@@ -1,11 +1,11 @@
 const express = require("express");
 const ytdl = require("ytdl-core");
 const ffmpeg = require("fluent-ffmpeg");
-const ffmpegInstaller = require("@ffmpeg-installer/ffmpeg");
+const ffmpegPath = require("ffmpeg-static");
 const fs = require("fs");
 const path = require("path");
 
-ffmpeg.setFfmpegPath(ffmpegInstaller.path);
+ffmpeg.setFfmpegPath(ffmpegPath);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
